@@ -113,6 +113,7 @@ Figure 9: Standard Sentiment Analysis Diagram
 ![GitHub Logo](images/Sample_Output_Standard.png)
  
 Figure 10:Sample Standard Output
+
 4.2.2 VADER
 The Vader sentiment analysis composed of four steps as below:
 •	Text processing: NLTK package will be used for the text processing such as tokenization, lower case, punctuation and stop word removal, and word stemming.
@@ -131,6 +132,7 @@ Figure 12: Model output-compound score
 ![GitHub Logo](images/Vader_Output.png)
 
 Figure 13: Sample VADER Output
+
 4.2.3 Model comparison
 After comparing two sentiment models, we eventually chose VADER as our final model for the reasons below:
 •	Vader has generally greater variations within topic.
@@ -141,7 +143,7 @@ After comparing two sentiment models, we eventually chose VADER as our final mod
 
 Figure 14: VADER emojis processing
 
-![GitHub Logo]()
+![GitHub Logo](images/table1.png)
 
 Table 1.Sample review of Yelp! Users
 
@@ -150,23 +152,25 @@ Table 1.Sample review of Yelp! Users
 5.1 Output and Summary Statistics
 With the two models chosen respectively for topic modelling and sentiment analysis, we combined the output and append back to the reviews. On the first level, we have the independent reviews with topic and topic score from LDA Gensim and VADER Analysis.  
 
-![GitHub Logo]()
+![GitHub Logo](images/Review_Output.png)
 
 Figure 15: Review Output at review level
 
 This is then grouped by business level output, to give each level a summarised score for each of the aspects of the restaurant.
 
-![GitHub Logo]()
+![GitHub Logo](images/Review_Output_Business_Level.png)
 
 Figure 16: Review Output at Business Level
 
 We then explored the distribution to understand better how each the restaurants fare in the popular categories:
 
-![GitHub Logo]()
+![GitHub Logo](images/Figure17.png)
+
 Figure 17: Food, Average 3.71
-![GitHub Logo]()
+
+![GitHub Logo](images/Figure18.png)
 Figure 18: Service, Average 2.99
-![GitHub Logo]()
+![GitHub Logo](images/Figure19.png)
 Figure 19: Flavour, Average 3.35
 
 This shows that based on community reviews, many of the restaurants in the sample set can improve on their service level to help the business to move forward. 
@@ -174,15 +178,19 @@ This shows that based on community reviews, many of the restaurants in the sampl
 5.2 Business Application
 Relating back to our use case, there are 3 main features that we can implement with our data science findings to help Yelp:
 
-![GitHub Logo]()
+![GitHub Logo](images/Figure20.png)
+
 Figure 20: Proof of Concept Mock-up
 
 Feature #1: Detailed Ratings System
 On top of the current consolidated rating, the detailed rating system now breaks down the restaurant by its main aspects, allowing insights into each of the main categories that may influence a customer to dine at this restaurant. A further implementation may be comparing to restaurants in the area to show what is their best aspect and how do they rank amongst those restaurants in the area.
+
 Feature #2: Filtering of Reviews
 With topic modelling, we are able to assign a main topic to the user reviews. With restaurants having up to thousands of reviews, not all reviews may be relevant to the user. Filtering allows a quick way to find what is relevant, with checkboxes for each aspects of the restaurant.
+
 Feature #3: Automated labelling
 With the automated labelling of the main topic for each review, the user is able to see at a glance what the review is about without going into the details, therefore finding what is relevant.
+
 6. DISCUSSIONS AND GAP ANALYSIS (LIMITATION)
 
 This project enabled us to explore the 3 different ways of generating topics namely Sci-kit learn, Gensim and Mallet algorithms. We experienced first-hand the effectiveness of various models. The study has led us to understand each model’s pros and cons.
