@@ -24,6 +24,6 @@ A user currently must scroll through all reviews to understand the business, wit
 To achieve our business task, we plan to explore several techniques in order to achieve the best results. We have therefore used several models as comparison in each of our tasks. We first start off with pre-processing, followed by 3 different type of LDA models for topic extraction, of which include Gensim, Scikit-learn and Mallet. From sentiment analysis, we have done a standard version with a predetermined set of positive and negative lexicons, while comparing it to VADER. These models are then evaluated via several tests to determine the best model, ultimately combining to give the reviews a topic name and score, allowing us to evaluate the business from each aspect, improving Yelp’s usability and convenience.
 
 
- ![alt text](/Users/jcheah/Documents/MITB/Term 2/Text analytics/Project/image/Picture 1.png)
+images/Solution_Overall_Design.png
  
- Figure 1: Solution Overall Design
+Figure 1: Solution Overall Design
