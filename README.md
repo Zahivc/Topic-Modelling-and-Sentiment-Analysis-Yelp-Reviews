@@ -1,5 +1,5 @@
 # Topic-Modelling-and-Sentiment-Analysis-Yelp-Reviews
-
+Authors: Jeff Cheah Vyi, Harry Tsang Tsz Hin, Sashank Ramesh, Ho Chin Tee, Shuyi Liu, Shannen Lam Siew Peng 
 
 ## 1. INTRODUCTION
 
